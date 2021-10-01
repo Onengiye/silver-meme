@@ -1,0 +1,403 @@
+/* 
+Mobile First Approach
+
+HEADER STYLING  */
+
+header{
+    height: 10vh;
+    background-color: #fff;
+    font-size: 1.8rem;
+    padding: 4.3rem;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    color:#999999;
+    font-family: 'Baumans', cursive;
+    font-weight: 800;
+}
+
+
+/* BANNER STYLLE */
+#banner{
+    height: 90vh;
+    width: 100%;
+    background: url("https://res.cloudinary.com/onengiyeamadi/image/upload/v1632020602/activity-7/hero-bg_i9uqup.jpg");
+    background-repeat: no-repeat;
+    background-position: top 20% right 20%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    color: #fff;
+}
+#banner-content{
+    width: 90%;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 3rem;
+    line-height: 5rem;
+}
+#banner-content  h1{
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.155em;
+}
+
+
+
+/* SERVICES STYLLE */
+#services{
+    padding:3.2rem;
+    font-size: 1.6rem;
+    background-color: #F2F2F2;
+
+}
+.section-heading{
+    padding: 1rem;
+    font-size: 1em;
+    color: #9F9EAB;
+    letter-spacing: 0.165em;
+    font-weight: 300;
+}
+#services h2{
+    font-weight: 600;
+    font-size: 4.8rem;
+    line-height: 1.1;
+    color: #000000;
+}
+#services p{
+    text-align: center;
+    padding: 4rem;
+    font-weight: 300;
+    color:#112;
+}
+
+/* SERVICES-2 */
+#handyman{
+    width: 80%;
+    margin: 0 auto;
+    padding: 5.5rem 0;
+
+}
+
+#handyman h2{
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.help{
+    color: red;
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 2rem 0;
+
+}
+
+#handyman img{
+    width: 100%; 
+}
+
+/* BEST QUALITY*/
+#best-quality{
+    background-color: #9F9EAB;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+#best-quality-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#best-quality-content h1{
+    color: #104E92;
+    font-size: 5em;
+    padding-top: 2em;
+
+    
+}
+#best-quality-content h1 span{
+    display: block;
+}
+#best-quality-content p{
+    font-size: 2.2rem;
+}
+
+/* WE-DO SECTION*/
+#we-do{
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+#we-do h2{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+#we-do h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+#we-do p{
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.4;
+    color: #111111;
+}
+.service-card{
+    padding: 2rem 0;
+}
+
+/* ABOUT-US */
+#about-us{
+    font-size: 26px;
+    background-color: #104E92;
+    color: #fff;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    
+}
+#about-us-container{
+    width: 80%;
+    /* margin: 0 auto; */
+}
+#about-us-container h4{
+    font-weight:200; 
+    font-size: 1em;
+ }
+ #about-us-container h2{
+     padding-top: 8px;
+    font-weight: 600; 
+    font-size: 2em;
+ }
+#about-gallery{
+
+    padding: 5rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+#about-gallery img{
+    width: 100%;
+    padding-bottom: 2em;
+}
+
+/* BOOK-US */
+#book-us{
+    width: 100%;
+    padding: 2em 0;
+
+}
+#book-us-container{
+    width: 90%;
+    padding: 3rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#book-us-container p{ 
+    padding: 1rem 0;
+    text-align: center;
+    color: #111111;
+    line-height: 1.5;
+    letter-spacing: 1.2;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+#book-us h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+
+
+
+/* TABLET SIZE */
+@media screen and (max-width: 768px) and (min-width : 458px){
+   
+    /* BANNER SECTION */
+     #banner{
+         background-size: cover;
+         background-position: 0;
+     }
+     #best-quality-container{
+         flex-direction: row;
+         justify-content: space-between;
+     }
+     #best-quality-container img{
+         width: 45%;
+     }
+ 
+     /* WE-DO SECTION */
+ 
+     #service-card-container{
+         display: flex;
+         justify-content: space-between;
+     }
+ 
+     .service-card{
+         width: 20%;
+     }
+     .service-card img{
+         height: 150px;
+     }
+ 
+     /* BOOK US SECTION */
+ 
+     #about-gallery{
+         width: 100%;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         flex-wrap: wrap;
+     }
+     #about-gallery img{
+         width: 50%;
+         padding: 0.5rem;
+     }
+     .br{
+         border: 2px solid yellow;
+     }
+     #book-us-container{
+         width: 80%;
+         padding: 3rem;
+         margin: 0 auto;
+     }
+     #book-us-container p{ 
+         padding: 1rem 0;
+         text-align: center;
+         color: #111111;
+         line-height: 1.5;
+         letter-spacing: 1.2;
+         width: 80%;
+         margin: 0 auto;
+         font-size: 2rem;
+     }
+     #book-us h3{
+         font-size: 2.5rem;
+         font-weight: 700;
+         line-height: 1.2;
+     }
+ }
+ 
+ 
+ /* LAPTOP SIZE */
+ @media screen and (min-width: 769px){
+     
+ 
+     /* BANNER SECTION */
+     #banner{
+         background-size: cover;
+         background-position: 0;
+     }
+  
+    #services p{
+        width: 70%;
+        font-size: 2.2rem;
+    }
+     
+     #service-card-container{
+         display: flex;
+         justify-content: space-between;
+     }
+ 
+     .service-card{
+         width: 20%;
+     }
+     .service-card img{
+         height: 150px;
+     }
+ 
+     /* BOOK US SECTION */
+        #best-quality-container{
+            flex-direction: row;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+        #best-quality-container img{
+            width: 45%;
+        }
+        #best-quality-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #best-quality-content p{
+            line-height: 1.8;
+        }
+        #best-quality-content h1 span{
+            display: inline;
+        }
+
+        #handyman-container{
+            display: flex;
+            justify-content: space-around;
+        }
+        .handyman-content{
+            width: 48%;
+        }
+
+        #about-gallery{
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        #about-gallery img{
+            width: 50%;
+            padding: 0.5rem;
+        }
+    
+        #about-us-container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #about-us-container h4{
+            font-size: 1em;
+        }
+        #about-us-container h2{
+            font-size: 3em;
+        }
+        #book-us-container{
+        width: 60%;
+        padding: 3rem;
+        margin: 0 auto;
+    }
+ #book-us-container p{ 
+     padding: 1rem 0;
+     text-align: center;
+     color: #111111;
+     line-height: 1.5;
+     letter-spacing: 1.2;
+     width: 80%;
+     margin: 0 auto;
+     font-size: 2rem;
+ }
+ #book-us h3{
+     font-size: 2.5rem;
+     font-weight: 700;
+     line-height: 1.2;
+ }
+ 
+     
+ 
+     .br{
+         border: 2px solid blue;
+     }
+ 
+     
+ }

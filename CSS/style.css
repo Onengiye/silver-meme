@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400&display=swap');
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* GENERAL STYLING */
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+.thick-line{
+    height: 12px;
+    width: 100%;
+    background-color: #fff;
+    margin: 2.4rem 0;
+}
+.br{
+    border: 2px solid red;
+}
+.center-text{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 1.6em;
+}
+.writeup{
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    padding: 2rem 0;
+    color: #112;
+    line-height: 1.5;
+    letter-spacing: 1.2;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+.bold-content{
+    font-weight: 400;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 5rem;  
+}
+.bold-up{
+    font-weight: 500;
+   
+}
+.light-up{
+    font-weight: 300;
+}
+
+
+.red-button{
+    width: 135px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #E71A23;
+    padding: 2rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.red{
+    background-color: #E71A23;
+}
+.white{
+    background-color: #fff;
+    border: 1px solid #111;
+    color: #111;
+}
